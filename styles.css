@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: beige;
+  color:#333333
+}
+
+header {
+  background-color: beige;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-weight: normal;
+  color:#3d392e;
+}
+
+header img.logo {
+  max-height: 75px;
+  width: auto;
+  display:inline-block;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: olivedrab;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li + li {
+  border-left: 1px solid #9c9874;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  text-align:center;
+  }
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+.side-column {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-column {
+  flex:1.4;
+  text-align:center;
+  padding: 0 15px;
+}
+
+.side-column h2{
+  margin:0;
+  font-size:1.3em
+}
+
+.main-column h2{
+  margin: 0 0 18px 0;
+  font-size:1.4em;
+}
+
+.main-column p{
+  line-height:1.65em;
+  text-align: left;
+  margin-bottom:18px;
+}
+.media-frame {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid olivedrab;
+  display: block;
+  background-color: #000000;
+}
+
+footer {
+  background-color:olivedrab;;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 20px;
+  border-top: 1px solid #dcd6c6;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color:#2b2b2b;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Style for About page */
+#head-chef {
+  text-align: center;
+  clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
